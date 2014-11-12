@@ -4,141 +4,160 @@
 .top
   background: transparent
   +background-size(cover)
-  height: 100px
+  height: 157px
   .top_in
     @extend %in
     +clr
     position: relative
-    padding-top: 50px
+    padding-top: 70px
 
   nav
     float: left
 
     ul
-      font-size: 16px
+      font-size: 15px
       padding: 0
       li
         display: inline-block
         float: left
-        margin-right: 16px
-        font-family: 'conv_pfdintextcondpro-light'
-        border-right: solid 1px
-        color: #ffffff
+        margin-right: 10px
+        font-family: 'robotomedium'
+        color: black
         line-height: 1em
-        padding-right: 20px
+        text-transform: uppercase
         &:last-child
           border: none
         a
           text-decoration: none
           color: inherit
-          border-bottom: solid 1px
+          border-bottom: dotted 1px
+          margin: 0 15px
           &:hover
-            border-bottom: solid 3px
-          &.is-active
-            border-bottom: solid 3px
+            border-bottom: none
+            +border-radius(3px)
+            +background-clip(padding-box)
+            background: #a88be9
+            +box-shadow(inset 0 -1px 0 rgba(255,255,255,.11))
+            padding: 10px 15px
+            color: white
+            margin: 0
 
+          &.is-active
+            border-bottom: none
+            +border-radius(3px)
+            +background-clip(padding-box)
+            background: #a88be9
+            +box-shadow(inset 0 -1px 0 rgba(255,255,255,.11))
+            padding: 10px 15px
+            color: white
+            margin: 0
   .top__right
     float: right
-    margin-top: -10px
+    margin-top: -27px
   .top__after-phone
+    display: inline-block
     vertical-align: middle
+    margin-left: 35px
   .top__phone
     +clr
-    font-size: 36px
-    color: #ffffff
-    margin: 0
-    font-family: 'conv_pfdintextcondpro-light'
-    line-height: .9em
-    font-weight: normal
+    color: #000
     display: inline-block
     vertical-align: middle
-    span
-      font-family: 'conv_pfdintextcondpro-medium'
-      font-size: 36px
+    .phone
+      font-size: 25px
+      margin: 0 0 10px
+      +rl
+      line-height: 1em
+      font-weight: normal
+      display: inline-block
+      vertical-align: middle
+      span
+        +rb
+    h3
+      font-size: 14px
+      +rb
+    h4
+      font-size: 14px
+      +rl
   .nomenclature
-    margin: 0 16px
-    color: white
-    font-size: 16px
+    color: black
+    display: block
+    font-size: 14px
     font-family: 'conv_pfdintextcondpro-lightital'
-    display: inline-block
+    +border-radius(3px)
+    +background-clip(padding-box)
+    background: #eaeff4
+    width: 178px
+    height: 36px
+    margin-top: -8px
+    margin-bottom: 10px
+    +rr
+    +box
+    text-align: center
+    padding-top: 9px
   .callme
-    display: inline-block
-    font-family: 'conv_pfdintextcondpro-light'
-    font-size: 18px
-    text-transform: none
-    text-decoration: underline
-    color: #ffffff
-    &:hover
-      text-decoration: none
+
 
 
 header
   background: url(../img/header_bg.jpg) center center no-repeat
   +background-size(cover)
-  height: 900px
+  height: 742px
   position: relative
   +box
   text-align: center
-  .logo
-    display: inline-block
-    margin-bottom: 15px
-  h1
-    font-size: 48px
-    color: #ffffff
-    font-family: 'conv_pfdintextcondpro-medium'
-    line-height: 1em
-    text-transform: none
-    font-weight: normal
-    text-align: center
-
-  h2
-    font-family: 'conv_pfdintextcondpro-thin'
-    font-size: 48px
-    font-weight: normal
-    color: #ffffff
-    text-transform: none
-    text-align: center
+  overflow: hidden
+  color: #ffffff
 
 
   .header_in
     @extend %in
     +clr
     position: relative
-
-    .watch
-      position: relative
-      background: url(../img/header_watch.png) no-repeat
-      width: 308px
-      height: 529px
-      z-index: 1
-      float: right
-      margin-top: 20px
-      +clr
-
-    .header__left
-      position: relative
-      float: left
-      z-index: 1
-      +clr
-      margin-top: 20px
-
-    .price
-      font-family: 'conv_pfdintextcondpro-light'
-      font-size: 48px
-      +box
-      padding-top: 33px
-      color: white
+    .logo
+      display: block
       position: absolute
-      width: 135px
-      height: 135px
-      +border-radius(50%)
-      +background-clip(padding-box)
-      +background-image(linear-gradient(to bottom, #ff3737 0%, #b60000 100%))
-      top: 323px
-      left: 605px
-      span
-        font-size: 24px
-        font-family: 'als_rublregular'
+      bottom: -340px
+      width: 3050px
+      left: -115px
+      h1
+        font-family: 'forumregular'
+        font-size: 309px
+        line-height: 1em
+        text-transform: uppercase
+
+
+  .header__left
+    position: relative
+    float: left
+    z-index: 1
+    width: 550px
+    +clr
+    margin-top: 115px
+    text-align: left
+
+    h2
+      font-size: 49px
+      font-family: 'forumregular'
+      line-height: 1.2em
+      font-weight: normal
+
+    p
+      +rl
+      font-size: 18px
+      margin-top: 25px
+
+
+  .header__right
+    position: absolute
+    top: 0
+    right: -250px
+    background: url(../img/header_img.png) center no-repeat
+    width: 901px
+    height: 916px
+
+
+
 
 
 .scrollMenu

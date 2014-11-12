@@ -191,10 +191,10 @@ head.ready(function() {
             var seconds = Math.floor((distance % _minute) / _second);
             if (seconds < 10) seconds = '0' + seconds;
 
-            //$(".count_line .d").html(days);
-            $(".count_line .h").html(hours);
-            $(".count_line .m").html(minutes);
-            $(".count_line .s").html(seconds);
+            $(".bl .d").html(days);
+            $(".bl .h").html(hours);
+            $(".bl .m").html(minutes);
+            $(".bl .s").html(seconds);
         }
         showRemaining();
         timer = setInterval(showRemaining, 1000);

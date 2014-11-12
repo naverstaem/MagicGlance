@@ -1,0 +1,181 @@
+// Normally mainpage styles 
+//+font('Conv_SegoePrintRegular', 'SegoePrintRegular')
+
+.top
+  background: transparent
+  +background-size(cover)
+  height: 100px
+  .top_in
+    @extend %in
+    +clr
+    position: relative
+    padding-top: 50px
+
+  nav
+    float: left
+
+    ul
+      font-size: 16px
+      padding: 0
+      li
+        display: inline-block
+        float: left
+        margin-right: 16px
+        font-family: 'conv_pfdintextcondpro-light'
+        border-right: solid 1px
+        color: #ffffff
+        line-height: 1em
+        padding-right: 20px
+        &:last-child
+          border: none
+        a
+          text-decoration: none
+          color: inherit
+          border-bottom: solid 1px
+          &:hover
+            border-bottom: solid 3px
+          &.is-active
+            border-bottom: solid 3px
+
+  .top__right
+    float: right
+    margin-top: -10px
+  .top__after-phone
+    vertical-align: middle
+  .top__phone
+    +clr
+    font-size: 36px
+    color: #ffffff
+    margin: 0
+    font-family: 'conv_pfdintextcondpro-light'
+    line-height: .9em
+    font-weight: normal
+    display: inline-block
+    vertical-align: middle
+    span
+      font-family: 'conv_pfdintextcondpro-medium'
+      font-size: 36px
+  .nomenclature
+    margin: 0 16px
+    color: white
+    font-size: 16px
+    font-family: 'conv_pfdintextcondpro-lightital'
+    display: inline-block
+  .callme
+    display: inline-block
+    font-family: 'conv_pfdintextcondpro-light'
+    font-size: 18px
+    text-transform: none
+    text-decoration: underline
+    color: #ffffff
+    &:hover
+      text-decoration: none
+
+
+header
+  background: url(../img/header_bg.jpg) center center no-repeat
+  +background-size(cover)
+  height: 900px
+  position: relative
+  +box
+  text-align: center
+  .logo
+    display: inline-block
+    margin-bottom: 15px
+  h1
+    font-size: 48px
+    color: #ffffff
+    font-family: 'conv_pfdintextcondpro-medium'
+    line-height: 1em
+    text-transform: none
+    font-weight: normal
+    text-align: center
+
+  h2
+    font-family: 'conv_pfdintextcondpro-thin'
+    font-size: 48px
+    font-weight: normal
+    color: #ffffff
+    text-transform: none
+    text-align: center
+
+
+  .header_in
+    @extend %in
+    +clr
+    position: relative
+
+    .watch
+      position: relative
+      background: url(../img/header_watch.png) no-repeat
+      width: 308px
+      height: 529px
+      z-index: 1
+      float: right
+      margin-top: 20px
+      +clr
+
+    .header__left
+      position: relative
+      float: left
+      z-index: 1
+      +clr
+      margin-top: 20px
+
+    .price
+      font-family: 'conv_pfdintextcondpro-light'
+      font-size: 48px
+      +box
+      padding-top: 33px
+      color: white
+      position: absolute
+      width: 135px
+      height: 135px
+      +border-radius(50%)
+      +background-clip(padding-box)
+      +background-image(linear-gradient(to bottom, #ff3737 0%, #b60000 100%))
+      top: 323px
+      left: 605px
+      span
+        font-size: 24px
+        font-family: 'als_rublregular'
+
+
+.scrollMenu
+  //@extend header
+  @extend .top
+  .top_in
+    padding-top: 20px
+  position: fixed
+  z-index: 999
+  width: 100%
+  top: 0
+  left: 0
+  bottom: auto
+  display: none
+  height: 60px
+  +box
+  background: rgba(40,40,40, 0.8)
+  .top
+    height: 0
+
+
+
+
+
+footer
+  box-sizing: border-box
+  +background-size(cover)
+  height: 100px
+  .footer_in
+    @extend %in
+  text-align: center
+  padding-top: 16px
+  p
+    font-size: 16px
+    color: #787878
+    a
+      color: #ae2e6b
+      &:hover
+        text-decoration: none
+

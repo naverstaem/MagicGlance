@@ -35,12 +35,23 @@ head.ready(function() {
 //        $('.top').toggleClass('tiny', $(document).scrollTop() > 0);
 //    });
 
+    $("#form5").ajaxForm({
+        success: function () {
+            $(".thanks-link").trigger('click');
+        },
+        data: {
+            title: 'Спасибо!'
+        }
+    });
 
-    $('#form1 form').validate();
+
+
+    $('#form1').validate();
     $('#form2').validate();
     $('#form3').validate();
     $('#form4').validate();
-    $('#form5 form').validate();
+    $('#form5').validate();
+
 
     $('.fancybox').fancybox({
         helpers:{
@@ -48,12 +59,15 @@ head.ready(function() {
                 locked: false,
                 css:{'background' : 'rgba(#000000, 0.6)'}
             }
+        },
+        tpl: {
+            closeBtn: '<div class="myFancyClose"></div>'
         }
-//        ,
-//        beforeShow: function(){
-//            $(".fancybox-skin").css("backgroundColor","transparent");
-//            $(".fancybox-skin").css("boxShadow","none");
-//        }
+        ,
+        beforeShow: function(){
+            $(".fancybox-skin").css("backgroundColor","transparent");
+            $(".fancybox-skin").css("boxShadow","none");
+        }
     });
     $('.slick').slick({
         slidesToShow: 3,

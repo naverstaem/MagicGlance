@@ -813,3 +813,72 @@ footer
     text-align: right
 
 
+//=============================================
+//popup forms
+//=============================================
+
+.callback
+  width: 382px
+  background: url(../img/popup-order_bg.png) center center no-repeat
+  height: 335px
+  padding: 20px 25px 35px
+  +box
+  text-align: center
+  h2
+    font-family: 'forumregular'
+    font-size: 48px
+    color: #ffffff
+    font-weight: normal
+  form
+    margin-top: 25px
+    input
+      width: 328px
+      height: 50px
+      margin-bottom: 14px
+      padding-left: 15px
+      font-size: 15px
+      +border-radius(3px)
+      +background-clip(padding-box)
+      background-color: #fff
+      @include box-shadow(inset 1px 2px 0 #86bee4)
+      border: none
+
+      &:focus
+        @include box-shadow(0 0 9px rgba(204,62,82,.13)) // outer glow
+    .button--callback
+      margin-top: 10px
+      font-size: 18px
+      padding: 13px 85px
+
+
+.thanks
+  text-align: center
+  background: url(../img/popup-thanks_bg.png) center center no-repeat
+  width: 422px
+  height: 390px
+  +box
+  +clr
+  font-family: 'forumregular'
+  color: #ffffff
+  &__img
+    margin-top: 30px
+    margin-bottom: 15px
+    display: inline-block
+    position: relative
+    width: 154px
+    height: 154px
+
+  h2
+    font-weight: normal
+    font-size: 60px
+    line-height: 1em
+  h3
+    font-weight: normal
+    font-size: 37px
+    line-height: 1em
+    margin-bottom: 8px
+  h4
+    font-weight: normal
+    font-size: 23px
+    line-height: 1.2em
+    padding: 0 40px

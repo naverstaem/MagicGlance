@@ -33,7 +33,7 @@
                 </div>
                 <div class="top__after-phone">
                     <div class="nomenclature">Артикул: 940059</div>
-                    <a href="#" class="callme btn">заказать звонок</a>
+                    <a href="#callback" class="callme btn fancybox">заказать звонок</a>
                 </div>
 
             </div>
@@ -120,7 +120,7 @@
                 </div>
                 <div class="block__form">
 
-                        <form action="#" method="post">
+                        <form id="form1" action="#" method="post">
                             <input type="text" name="name" class="name required" placeholder="Ваше имя">
                             <input type="text" name="phone" class="phone required"
                             placeholder="Ваш  телефон">
@@ -510,7 +510,7 @@
                 </div>
                 <div class="block__form">
 
-                    <form action="#" method="post">
+                    <form id="form2" action="#" method="post">
                         <input type="text" name="name" class="name required" placeholder="Ваше имя">
                         <input type="text" name="phone" class="phone required"
                                placeholder="Ваш  телефон">
@@ -542,7 +542,7 @@
 
                     </div>
 
-                    <form id="form2" action="#" method="post">
+                    <form id="form3" action="#" method="post">
                         <input type="text" name="name" placeholder="Введите имя" required/>
                         <input type="text" name="phone" placeholder="Введите телефон" required/>
                             <button class="btn btn--review">Заказать товар</button>
@@ -561,7 +561,7 @@
 
                 </div>
 
-                <form id="form3" action="#" method="post">
+                <form id="form4" action="#" method="post">
                     <input type="text" name="name" placeholder="Введите имя" required/>
                     <input type="text" name="phone" placeholder="Введите телефон" required/>
                     <button class="btn btn--review">Заказать товар</button>
@@ -589,6 +589,27 @@
 </div>
 </div>
 <!-- END out-->
+<div class="callback" id="callback" style="display: none;">
+    <h2>Заказать звонок</h2>
+
+    <form action="#" method="post" id="form5">
+        <input type="text" name="name" class="name required" placeholder="Ваше имя">
+        <input type="text" name="phone" class="phone required" placeholder="Ващ телефон">
+        <button class="btn button--callback">заказать товар</button>
+    </form>
+
+</div>
+<div class="thanks" id="thanks" style="display: none;">
+    <div class="thanks__img">
+        <img src="img/ok.png" alt="thanks"/>
+    </div>
+
+    <h2>Спасибо!</h2>
+    <h3>Ваша заявка отправлена.</h3>
+    <h4>Через некоторое время с вами свяжется
+        наш менеджер.</h4>
+</div>
+<a class="thanks-link fancybox" href="#thanks"></a>
 
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

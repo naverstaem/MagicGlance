@@ -196,11 +196,11 @@ header
     .form__img
       float: left
       display: inline-block
-      width: 297px
-      height: 390px
+      width: 260px
+      height: 248px
       position: relative
-      top: -45px
-      left: -15px
+      top: -23px
+      left: 4px
       +clr
       img
         display: block
@@ -254,7 +254,6 @@ header
     clear: both
     +clr
     position: relative
-    top: -127px
   &__img
     float: left
     margin-left: -35px
@@ -282,12 +281,110 @@ header
 .about
   +clr
   background: url(../img/about_bg.png) center center no-repeat
-  +background-size(cover)
   padding-top: 90px
+  height: 993px
   padding-bottom: 30px
-  margin-top: -127px
+  overflow: hidden
+  +box
   .about_in
     @extend %in
+    position: relative
+    +clr
+  .row
+    &:last-child
+      margin-top: 100px
+
+  .about__img
+    position: absolute
+    bottom: 380px
+    right: -150px
+    z-index: 0
+  .about__img--second
+    display: inline-block
+    position: static
+    margin-left: -115px
+    margin-right: 55px
+  .about__text
+    width: 525px
+    display: inline-block
+    color: #ffffff
+    vertical-align: top
+    position: relative
+    z-index: 1
+    h3
+      +rb
+      font-size: 23px
+      margin-bottom: 15px
+    ul
+      padding-left: 40px
+      li
+        +rl
+        position: relative
+        margin-top: 15px
+        span
+          +rb
+        &:before
+          position: absolute
+          content: ""
+          +s(check-ico)
+          top: 2px
+          left: -40px
+
+.components
+  padding-top: 60px
+  .components_in
+    @extend %in
+  h2
+    margin-bottom: 50px
+  h3
+    +rm
+    font-size: 25px
+    text-align: center
+    margin-bottom: 15px
+  h4
+    +rl
+    font-size: 18px
+    text-align: center
+    span
+      +rm
+  &__items
+    hr
+      width: 90%
+      height: 0
+      border: none
+      border-bottom: solid 1px rgb(235,235,235)
+
+    .item
+      padding-top: 25px
+      .item__img
+        display: inline-block
+        vertical-align: middle
+        margin-right: 0
+        width: 224px
+        height: 174px
+      .item__text
+        display: inline-block
+        width: 770px
+        text-align: left
+        vertical-align: top
+        margin-top: 20px
+        h5
+          +rm
+          font-size: 20px
+        p
+          +rl
+          font-size: 14px
+          color: #4b4b4b
+  .item--right
+    .item__text
+      text-align: right
+
+
+
+
+
+
+
 
 footer
   box-sizing: border-box

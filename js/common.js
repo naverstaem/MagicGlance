@@ -35,14 +35,6 @@ head.ready(function() {
 //        $('.top').toggleClass('tiny', $(document).scrollTop() > 0);
 //    });
 
-    $("#form5").ajaxForm({
-        success: function () {
-            $(".thanks-link").trigger('click');
-        },
-        data: {
-            title: 'Спасибо!'
-        }
-    });
 
 
 
@@ -52,6 +44,14 @@ head.ready(function() {
     $('#form4').validate();
     $('#form5').validate();
 
+    $("#form5").ajaxForm({
+        success: function () {
+            $(".thanks-link").trigger('click');
+        },
+        data: {
+            title: 'Спасибо!'
+        }
+    });
 
     $('.fancybox').fancybox({
         helpers:{
@@ -69,10 +69,10 @@ head.ready(function() {
             $(".fancybox-skin").css("boxShadow","none");
         }
     });
-    $('.slick').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1
-    });
+    //$('.slick').slick({
+    //    slidesToShow: 3,
+    //    slidesToScroll: 1
+    //});
 //
 //    $('.fancybox').fancybox({
 //        padding: 0,

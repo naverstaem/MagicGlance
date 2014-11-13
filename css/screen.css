@@ -36,7 +36,7 @@ input::-moz-placeholder, textarea::-moz-placeholder { font-size: 13px; text-tran
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 13px; text-transform: none; color: #a0a0a0; font-family: "robotolight"; font-weight: normal; font-style: normal; }
 input::placeholder, textarea::placeholder { font-size: 13px; text-transform: none; color: #a0a0a0; font-family: "robotolight"; font-weight: normal; font-style: normal; }
 
-.top .top_in, .scrollMenu .top_in, header .header_in, .intro .intro_in, .about .about_in, .components .components_in, .instruction .instruction_in, footer .footer_in { max-width: 1200px; width: 1000px; margin-left: auto; margin-right: auto; }
+.top .top_in, .scrollMenu .top_in, header .header_in, .intro .intro_in, .about .about_in, .components .components_in, .instruction .instruction_in, .features .features_in, footer .footer_in { max-width: 1200px; width: 1000px; margin-left: auto; margin-right: auto; }
 
 .myFancyClose { position: absolute; top: -17px; right: -18px; }
 
@@ -157,10 +157,11 @@ header .header__right { position: absolute; top: 0; right: -250px; background: u
 .about .about__img--second { display: inline-block; position: static; margin-left: -115px; margin-right: 55px; }
 .about .about__text { width: 525px; display: inline-block; color: #ffffff; vertical-align: top; position: relative; z-index: 1; }
 .about .about__text h3 { font-family: "robotobold"; font-weight: normal; font-style: normal; font-size: 23px; margin-bottom: 15px; }
-.about .about__text ul { padding-left: 40px; }
-.about .about__text ul li { font-family: "robotolight"; font-weight: normal; font-style: normal; position: relative; margin-top: 15px; }
-.about .about__text ul li span { font-family: "robotobold"; font-weight: normal; font-style: normal; }
-.about .about__text ul li:before { position: absolute; content: ""; background: url('../img/icons-s036f0b1440.png') 0 0 no-repeat; width: 22px; height: 22px; top: 2px; left: -40px; }
+
+.list { padding-left: 40px; }
+.list li { font-family: "robotolight"; font-weight: normal; font-style: normal; position: relative; margin-top: 15px; }
+.list li span { font-family: "robotobold"; font-weight: normal; font-style: normal; }
+.list li:before { position: absolute; content: ""; background: url('../img/icons-s036f0b1440.png') 0 0 no-repeat; width: 22px; height: 22px; top: 2px; left: -40px; }
 
 .components { padding-top: 60px; padding-bottom: 60px; }
 .components h2 { margin-bottom: 50px; }
@@ -190,6 +191,11 @@ header .header__right { position: absolute; top: 0; right: -250px; background: u
 .instruction__items .item .item__img img { display: block; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); position: absolute; }
 .instruction__items .item .item__text { text-align: left; text-indent: 30px; color: #ffffff; font-size: 14px; position: relative; }
 .instruction__items .item .item__text span { font-family: "robotobold"; font-weight: normal; font-style: normal; position: absolute; left: -30px; top: -12px; font-size: 25px; }
+
+.features { padding-top: 70px; padding-bottom: 50px; }
+.features h2 { line-height: 1em; }
+.features h3 { font-family: "robotobold"; font-weight: normal; font-style: normal; font-size: 23px; margin-top: 70px; margin-bottom: 25px; }
+.features .list--features { vertical-align: top; width: 45%; display: inline-block; }
 
 footer { box-sizing: border-box; -moz-background-size: cover 100%; -webkit-background-size: cover 100%; background-size: cover 100%; height: 100px; text-align: center; padding-top: 16px; }
 footer p { font-size: 16px; color: #787878; }

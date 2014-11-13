@@ -315,20 +315,20 @@ header
       +rb
       font-size: 23px
       margin-bottom: 15px
-    ul
-      padding-left: 40px
-      li
-        +rl
-        position: relative
-        margin-top: 15px
-        span
-          +rb
-        &:before
-          position: absolute
-          content: ""
-          +s(check-ico)
-          top: 2px
-          left: -40px
+.list
+  padding-left: 40px
+  li
+    +rl
+    position: relative
+    margin-top: 15px
+    span
+      +rb
+    &:before
+      position: absolute
+      content: ""
+      +s(check-ico)
+      top: 2px
+      left: -40px
 
 .components
   padding-top: 60px
@@ -448,6 +448,23 @@ header
           left: -30px
           top: -12px
           font-size: 25px
+
+.features
+  padding-top: 70px
+  padding-bottom: 50px
+  .features_in
+    @extend %in
+  h2
+    line-height: 1em
+  h3
+    +rb
+    font-size: 23px
+    margin-top: 70px
+    margin-bottom: 25px
+  .list--features
+    vertical-align: top
+    width: 45%
+    display: inline-block
 
 
 

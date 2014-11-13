@@ -3,7 +3,7 @@
 
 .top
   background: transparent
-  +background-size(cover)
+  +cover
   height: 157px
   .top_in
     @extend %in
@@ -101,7 +101,7 @@
 
 header
   background: url(../img/header_bg.jpg) center center no-repeat
-  +background-size(cover)
+  +cover
   height: 742px
   position: relative
   +box
@@ -383,7 +383,7 @@ header
 .instruction
   +clr
   background: url(../img/instruction_bg.png) no-repeat center center
-  +background-size(cover)
+  +cover
   height: 665px
   padding-top: 60px
   +box
@@ -485,7 +485,7 @@ header
     color: #000000
 %f-bl
   +box
-  +background-size(cover)
+  +cover
   height: 235px
   color: #ffffff
   h3
@@ -516,13 +516,14 @@ header
 .work
   padding-top: 40px
   overflow: hidden
-  height: 400px
+
   .work_in
     @extend %in
     position: relative
 
   h2
     line-height: .8em
+    color: #3f3f3f
     &:after
       border-bottom: none
   .work__circles
@@ -573,26 +574,240 @@ header
         &:before
           +s(w-img2)
     .item3
-      bottom: 440px
-      left: 220px
+      text-align: left
+      bottom: 297px
+      left: 735px
+      span
+        left: -78px
+        right: auto
+        &:before
+          +s(w-img3)
     .item4
-      bottom: 400px
-      left: 160px
+      text-align: left
+      bottom: 440px
+      left: 885px
+      span
+        left: -78px
+        right: auto
+        &:before
+          +s(w-img4)
+
+
+.reviews
+  +clr
+  background: url(../img/reviews_bg.png) center center no-repeat
+  +cover
+  padding-top: 70px
+  margin-top: 250px
+  height: 514px
+  +box
+
+  .reviews_in
+    @extend %in
+  h2
+    color: white
+  &__items
+    margin-top: 65px
+    .item
+      display: inline-block
+      width: 307px
+      margin-right: 35px
+      &:last-child
+        margin-right: 0
+      .head
+        text-align: left
+        .image
+          width: 60px
+          height: 60px
+          float: left
+          margin-right: 15px
+          position: relative
+
+          img
+            display: block
+            +border-radius(50%)
+            position: relative
+            z-index: 1
+        h3
+          font-family: 'calibribold'
+          color: #ffffff
+          font-size: 22px
+          font-weight: normal
+          +text-shadow(0 1px 0 rgba(0,0,0,.15))
+        h4
+          font-size: 13px
+          color: #dbd9ef
+          font-weight: normal
+          font-family: 'conv_calibril'
+
+      .review
+        position: relative
+        top: -7px
+        left: -7px
+        text-align: left
+        padding: 25px
+        margin-top: 43px
+        background: #ffffff
+        +border-radius(14px)
+        width: 100%
+        font-family: 'conv_calibril'
+        font-size: 14px
+        color: #3f3f3f
+        +box-shadow(0 1px 3px rgba(0,0,0,.26), inset 0 -1px 0 #fff)
+        +box
+        &:before
+          position: absolute
+          content: ""
+          +s(review-popup)
+          top: -9px
+          left: 21px
+
+
+.header--bottom
+  background: url(../img/header--bottom_bg.jpg) center center no-repeat
+  +cover
+  height: 629px
+  position: relative
+  .header--bottom_in
+    @extend %in
+    position: relative
+    height: 100%
+  .intro__form--bottom
+    position: absolute
+    bottom: -135px
+    left: 0
+.also
+  +clr
+  padding-top: 180px
+  padding-bottom: 90px
+  .also_in
+    @extend %in
+    width: 830px
+  h2
+    line-height: .8
+    color: #3f3f3f
+    &:after
+      border-bottom: none
+  &__items
+    margin-top: 140px
+  .item
+    background: url(../img/form_bg--bottom.png) no-repeat
+    height: 586px
+    width: 382px
+    text-align: center
+    display: inline-block
+    vertical-align: top
+    +box
+    margin-right: 60px
+    &:last-child
+      margin-right: 0
+      .img
+        margin-top: -56px
+    h3
+      font-size: 30px
+      font-family: 'forumregular'
+      color: #ffffff
+      margin: 5px 0 10px
+      font-weight: normal
+      +text-shadow(0 1px 0 rgba(0,0,0,.08))
+
+    .wave
+      width: 100%
+      height: 0
+      border-bottom: solid 1px rgba(#fff, .2)
+    p
+      font-size: 29px
+      color: #181818
+      text-transform: uppercase
+
+
+  .img
+    height: 271px
+    margin-top: -64px
+    display: inline-block
+    margin-bottom: 10px
+    img
+      display: block
+  .price-b
+    margin: 0 0 20px
+    padding: 0 30px
+  .price-old
+    color: #cfe7f7
+    font-size: 30px
+    font-family: 'forumregular'
+    padding: 0
+    background: none
+    text-align: right
+    width: 49%
+    +text-shadow(0 1px 0 rgba(0,0,0,.08))
+    display: inline-block
+    span
+      font-size: 30px
+  .price-new
+    @extend .price-old
+    background: none
+    color: #ffffff
+    text-align: left
+    font-family: 'forumregular'
+    font-size: 48px
+    span
+      font-size: 42px
+
+
+
+
+  input
+    width: 328px
+    height: 50px
+    margin-bottom: 14px
+    padding-left: 15px
+    font-size: 15px
+    +border-radius(3px)
+    +background-clip(padding-box)
+    background-color: #fff
+    @include box-shadow(inset 1px 2px 0 #86bee4)
+    border: none
+
+    &:focus
+      @include box-shadow(0 0 9px rgba(204,62,82,.13)) // outer glow
+
+
+  .btn--review
+    font-size: 18px
+    padding: 13px 85px
+    margin-top: 11px
+
+
+
+
+
+
+
+
 
 
 footer
   box-sizing: border-box
-  +background-size(cover)
-  height: 100px
+  background: url(../img/footer_bg.png)
+  +cover
+  height: 118px
+  padding-top: 40px
+  font-size: 14px
+  color: #cdcdd5
   .footer_in
     @extend %in
-  text-align: center
-  padding-top: 16px
-  p
-    font-size: 16px
-    color: #787878
+  .footer__left
+    float: left
+    text-align: left
     a
-      color: #ae2e6b
+      display: block
+      +rl
+      color: #cdcdd5
+      text-decoration: none
       &:hover
-        text-decoration: none
+        text-decoration: underline
+  .footer__right
+    float: right
+    text-align: right
+
 

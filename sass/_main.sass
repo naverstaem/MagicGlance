@@ -512,6 +512,74 @@ header
 .f-b6
   @extend %f-bl
   background: url(../img/f_bg6.jpg) center center no-repeat
+
+.work
+  padding-top: 40px
+  overflow: hidden
+  height: 400px
+  .work_in
+    @extend %in
+    position: relative
+
+  h2
+    line-height: .8em
+    &:after
+      border-bottom: none
+  .work__circles
+    position: absolute
+    top: -600px
+    left: -75px
+    background: url(../img/circles.png) center center no-repeat
+    width: 1154px
+    height: 1154px
+    content: ""
+    .item
+      position: absolute
+      width: 170px
+      text-align: right
+      +rl
+      font-size: 16px
+      color: #3f3f3f
+      bottom: 0
+      left: 30px
+      span
+        position: absolute
+        content: ""
+        width: 58px
+        height: 58px
+        background: #c95faf
+        +border-radius(50%)
+        right: -78px
+        top: -5px
+        +box-shadow(rgba(#c95faf,.11) 0 0 0 6px)
+        &:before
+          position: absolute
+          top: 50%
+          left: 50%
+          content: ""
+          +transform(translate(-50%,-50%))
+
+    .item1
+      bottom: 440px
+      left: 95px
+      span
+        &:before
+          +s(w-img1)
+
+    .item2
+      bottom: 297px
+      left: 245px
+      span
+        &:before
+          +s(w-img2)
+    .item3
+      bottom: 440px
+      left: 220px
+    .item4
+      bottom: 400px
+      left: 160px
+
+
 footer
   box-sizing: border-box
   +background-size(cover)

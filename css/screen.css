@@ -115,7 +115,7 @@ header .header__left h2 { font-size: 49px; font-family: "forumregular"; line-hei
 header .header__left p { font-family: "robotolight"; font-weight: normal; font-style: normal; font-size: 18px; margin-top: 25px; }
 header .header__right { position: absolute; top: 0; right: -250px; background: url(../img/header_img.png) center no-repeat; width: 901px; height: 916px; }
 
-.scrollMenu { position: fixed; z-index: 999; width: 100%; top: 0; left: 0; bottom: auto; display: none; height: 60px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: rgba(40, 40, 40, 0.8); }
+.scrollMenu { position: fixed; z-index: 999; width: 100%; top: 0; left: 0; bottom: auto; display: none; height: 60px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: rgba(255, 255, 255, 0.8); }
 .scrollMenu .top_in { padding-top: 20px; }
 .scrollMenu .top, .scrollMenu .scrollMenu { height: 0; }
 
